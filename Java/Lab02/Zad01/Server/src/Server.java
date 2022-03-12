@@ -20,7 +20,16 @@ public class Server {
         return x + y;
     }
 
-    public Integer execAsync(int x) {
-
+    public Integer executeAsync(int time) {
+        System.out.println("Called asynchronously");
+        System.out.println("Counting down...");
+        try {
+            Thread.sleep(time);
+        } catch(InterruptedException e) {
+            e.printStackTrace();
+            Thread.currentThread().interrupt();
+        }
+        System.out.println("Done");
+        return time;
     }
 }
