@@ -28,22 +28,30 @@ public class ConsoleController {
     }
 
     private void getCommand(){
-        command = scanner.nextLine();
+        if(scanner.hasNext()){
+            command = scanner.nextLine();
+        }
     }
 
     private boolean processCommand() {
         String[] parts = command.split("\\s+");
-//        if(!parts[0].equalsIgnoreCase("send")){
-//
-//        }
         boolean success = true;
         try {
             switch (parts[0].toLowerCase()) {
                 case "clear":
-                    clearBuffer();
+                    clear();
                     break;
                 case "send":
-                    isReady = true;
+                    if(parts.length > 1){
+                        if(parts[1].equalsIgnoreCase("async")){
+                            isAsync = true;
+                            isReady = true;
+                        } else {
+                            success = false;
+                        }
+                    } else {
+                        isReady = true;
+                    }
                     break;
                 case "data":
                     print(method);
@@ -68,13 +76,6 @@ public class ConsoleController {
             }
         } catch(IndexOutOfBoundsException | NumberFormatException e) {
             success = false;
-        }
-        if(parts.length == 3) {
-            if(parts[2].equalsIgnoreCase("async")) {
-                isAsync = true;
-            } else {
-                success = false;
-            }
         }
         return success;
     }
