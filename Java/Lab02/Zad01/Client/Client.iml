@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../lib/xmlrpc-1.2-b1-applet.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../lib/xmlrpc-1.2-b1-applet.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../../lib/xmlrpc-1.2-b1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../lib/xmlrpc-1.2-b1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
