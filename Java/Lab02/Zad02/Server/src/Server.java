@@ -28,14 +28,17 @@ public class Server {
         return ret;
     }
 
-    public String getPyramidAsync(int height, char symbol) {
+    public String getPyramidAsync(int height, String symbol) {
         String spaces = " ".repeat(height - 1);
+        String shape = symbol;
         StringBuilder ret = new StringBuilder();
         for(int i=0; i<height; i++) {
             ret.append(spaces);
-            ret.append(symbol);
+            ret.append(shape);
+            shape += symbol + symbol;
             ret.append('\n');
-            spaces = spaces.substring(0, spaces.length() - 1);
+            if(spaces.length() == 0) spaces = "";
+            else spaces = spaces.substring(0, spaces.length() - 1);
         }
         return ret.toString();
     }
