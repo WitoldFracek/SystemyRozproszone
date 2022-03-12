@@ -7,6 +7,7 @@ public class MyCallback implements AsyncCallback {
     @Override
     public void handleResult(Object result, URL url, String method) {
         System.out.println("handleResult");
+        System.out.println(method);
     }
 
     @Override
