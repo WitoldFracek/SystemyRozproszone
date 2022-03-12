@@ -10,7 +10,7 @@ public class Server {
             server.start();
             System.out.println("Server is running.");
             System.out.println("Listening on port: " + port);
-            System.out.println("To change the configuration pres crl+c");
+            System.out.println("To change the configuration press crl+c");
         } catch(Exception e) {
             System.err.println("Server: " + e);
         }
