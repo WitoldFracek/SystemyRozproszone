@@ -19,7 +19,7 @@ public class Client {
             System.out.println("Result: " + res);
             System.out.println();
             client.executeAsync("MyServer.executeAsync", params2, callback);
-            System.out.println("Asynchronous callback");
+            System.out.println("Asynchronous callback test");
         } catch(Exception e) {
             System.err.println("Client: " + e);
         }
