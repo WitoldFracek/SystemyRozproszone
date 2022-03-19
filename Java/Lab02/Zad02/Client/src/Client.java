@@ -17,7 +17,7 @@ public class Client {
         cc.clearBuffer();
 
         try {
-            XmlRpcClient client = new XmlRpcClient(serverIp + ":" + port);
+            XmlRpcClient client = new XmlRpcClient("http://" + serverIp + ":" + port);
             cc.print("Connected to: " + client.getURL());
 
             while(true) {
