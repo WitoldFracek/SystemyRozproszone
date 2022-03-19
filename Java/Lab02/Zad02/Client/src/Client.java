@@ -1,12 +1,17 @@
 import org.apache.xmlrpc.XmlRpcClient;
 import org.apache.xmlrpc.XmlRpcException;
 
+import java.util.Vector;
+
 public class Client {
+
+    // min= 100000000 max=110000000
 
     public static void main(String[] args) {
         ConsoleController cc = new ConsoleController();
         String serverId = "RSI_ZAD2";
         PyramidCallback pc = new PyramidCallback();
+        PrimesCallback primesc = new PrimesCallback();
 
         cc.print("Enter server IP:");
         String serverIp = cc.loadString();
@@ -26,10 +31,13 @@ public class Client {
                     cc.input();
                 }
                 String method = cc.getMethod();
-                var params = cc.getBuffer();
+                var params = (Vector<Object>)cc.getBuffer().clone();
                 try {
                     if (cc.isAsync) {
-                        client.executeAsync(serverId + "." + method, params, pc);
+                        if(method.equalsIgnoreCase("getPyramidAsync"))
+                            client.executeAsync(serverId + "." + method, params, pc);
+                        if(method.equalsIgnoreCase("myPrimes"))
+                            client.executeAsync(serverId + "." + method, params, primesc);
                     } else {
                         var result = client.execute(serverId + "." + method, params);
                         System.out.println(result);

@@ -1,5 +1,7 @@
 import org.apache.xmlrpc.WebServer;
 
+import java.util.Vector;
+
 public class Server {
 
     public static void main(String[] args) {
@@ -29,6 +31,9 @@ public class Server {
         return ret;
     }
 
+    // Wrocław: 51.1 17.02
+    // Warszawa: 52.22 21.02
+    // Olsztyn: 53.77 20.47
     public double distance(double latitude1, double longitude1, double latitude2, double longitude2) {
         double radius = 6371; // Earth radius in km
         double lat1 = toRad(latitude1);
@@ -46,8 +51,14 @@ public class Server {
         return Math.sin(value / 2) * Math.sin(value / 2);
     }
 
-    public int myPrimes(int min, int max) {
-        int currentMax = min;
+    public Vector<Integer> myPrimes(int min, int max) {
+        var ret = new Vector<Integer>();
+        if(min > max) {
+            ret.addElement(-1);
+            ret.addElement(-1);
+            return ret;
+        }
+        int currentMax = -1;
         int primeCounter = 0;
         for(int i = min; i <= max; i++) {
             if(isPrime(i)) {
@@ -57,12 +68,16 @@ public class Server {
                 }
             }
         }
-        return 0;
+        ret.addElement(primeCounter);
+        ret.addElement(currentMax);
+        return ret;
     }
 
     private boolean isPrime(int number) {
         if(number < 1)
             return false;
+        if(number == 2 || number == 3)
+            return true;
         if(number % 2 == 0 || number % 3 == 0)
             return false;
         int i = 5;
