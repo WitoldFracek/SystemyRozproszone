@@ -47,28 +47,6 @@ public class Client {
                 }
                 cc.clear();
             }
-//            String result = (String)client.execute(serverId + ".show", new Vector<>());
-//            System.out.println("\n" + result);
-//
-//
-//            var bmiParams = new Vector<Double>();
-//            bmiParams.addElement(67.0);
-//            bmiParams.addElement(1.87);
-//            double bmi = (double)client.execute(serverId + ".calculateBMI", bmiParams);
-//            System.out.println("BMI: " + bmi);
-//
-//            var triangleParams = new Vector<Double>();
-//            triangleParams.addElement(3.0);
-//            triangleParams.addElement(4.0);
-//            triangleParams.addElement(5.0);
-//            double surface = (double)client.execute(serverId + ".triangleSurface", triangleParams);
-//            System.out.println("Surface: " + surface);
-//
-//            AsyncCallback callback = new Callback();
-//            var pyramidParams = new Vector<>();
-//            pyramidParams.addElement(5);
-//            pyramidParams.addElement("#");
-//            client.executeAsync(serverId + ".getPyramidAsync", pyramidParams, callback);
         } catch(Exception e) {
             System.err.println("Client: " + e);
         }

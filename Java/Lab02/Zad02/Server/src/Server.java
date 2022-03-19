@@ -24,6 +24,7 @@ public class Server {
         String ret = """
                 show() -> returns this message.
                 distance(double lat1, double lon1, double lat2, double lon2) -> returns the distance between two points on Earth.
+                myPrimes(int min, int max) -> returns primes count between specified min and max values and the value of the greatest prime in that sequence.
                 calculateBmi(double mass, double height) -> returns BMI (double).
                 getPyramidAsync(int height, char symbol) -> return a string pyramid made out of given symbol.
                 triangleSurface(double a, double b, double c) -> returns a surface of specified triangle (double).
