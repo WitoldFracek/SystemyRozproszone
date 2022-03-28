@@ -11,7 +11,8 @@ public class MyClient {
             return;
         }
         
-        String adres = args[0];
+        String adres1 = args[0];
+        String adres2 = args[1];
 
 
         inObj = new InputType();
@@ -20,23 +21,27 @@ public class MyClient {
         inObj.operation = "add";
 
         try {
-            zObiekt = (CalcObject) java.rmi.Naming.lookup(adres);
+            zObiekt = (CalcObject) java.rmi.Naming.lookup(adres1);
+            zObiekt2 = (CalcObject2) java.rmi.Naming.lookup(adres2);
             //tu cooos
         } catch (Exception e) {
-            System.out.println("Nie można pobrać referencji do "+adres);
+            System.out.println("Nie można pobrać referencji do "+adres1);
             e.printStackTrace();
             return;
         }
-        System.out.println("Referencja do "+adres+" jest pobrana.");
+        System.out.println("Referencja do "+adres1+" jest pobrana.");
         
         try {
             wynik = zObiekt.calculate(1.1, 2.2);
+            wynik2 = zObiekt2.calculate(inObj);
         } catch (Exception e) {
             System.out.println("Błąd zdalnego wywołania.");
             e.printStackTrace();
             return;
         }
-        System.out.println("Wynik = "+wynik);
+        System.out.println("Wynik1 = "+wynik);
+        System.out.println("Wynik2 = " + wynik2.result);
+        System.out.println("Opis wyniku 2: " + wynik2.result_description);
         return;
     }
 }

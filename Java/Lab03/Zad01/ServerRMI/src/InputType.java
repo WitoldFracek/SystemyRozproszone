@@ -1,6 +1,9 @@
+import java.io.Serial;
 import java.io.Serializable;
 
 public class InputType implements Serializable {
+
+    @Serial
     private static final long serialVersionUID = 101L;
     String operation;
     public double x1;
