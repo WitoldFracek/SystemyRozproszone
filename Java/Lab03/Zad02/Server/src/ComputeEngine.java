@@ -1,10 +1,15 @@
+import java.io.Serial;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
-// -Djava.rmi.server.hostname=localhost -Djava.security.policy="srv.policy"
+// -Djava.rmi.server.hostname=localhost -Djava.security.policy=out\production\Server\srv.policy
 public class ComputeEngine implements Compute {
+
+    @Serial
+    private static final long serialVersionUID = 103L;
+
     public ComputeEngine() {
         super();
     }
@@ -24,7 +29,7 @@ public class ComputeEngine implements Compute {
             String name = "Compute";
             Compute engine = new ComputeEngine();
             Compute stub = (Compute) UnicastRemoteObject.exportObject(engine, 0);
-            //Registry registry = LocateRegistry.getRegistry();
+            //Registry registry = LocateRegistry.getRegistry(args[0]);
             Registry registry = LocateRegistry.createRegistry(1099);
             registry.rebind(name, stub);
             System.out.println("ComputeEngine bound");
