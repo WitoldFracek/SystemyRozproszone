@@ -1,0 +1,4 @@
+grant codeBase "file:/src/" {
+    permission java.security.AllPermission;
+    permission java.net.SocketPermission "localhost:1099-", "listen, connect, resolve";
+};

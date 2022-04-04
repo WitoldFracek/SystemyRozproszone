@@ -4,6 +4,9 @@ import java.rmi.registry.Registry;
 
 public class MyServer {
     public static void main(String[] args) {
+
+        MyData.info();
+
         if (args.length == 0) {
             System.out.println("You have to enter RMI object address in the form: //host_address/service_name");
             return;

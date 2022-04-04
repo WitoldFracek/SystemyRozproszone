@@ -1,5 +1,8 @@
 public class MyClient {
     public static void main(String[] args) {
+
+        MyData.info();
+
         double wynik;
         CalcObject zObiekt;
         CalcObject2 zObiekt2;
@@ -10,7 +13,12 @@ public class MyClient {
             System.out.println("You have to enter RMI object address in the form: //host_address/service_name");
             return;
         }
-        
+
+        if (System.getSecurityManager() == null) {
+            System.getSecurityManager();
+        }
+
+
         String adres1 = args[0];
         String adres2 = args[1];
 
