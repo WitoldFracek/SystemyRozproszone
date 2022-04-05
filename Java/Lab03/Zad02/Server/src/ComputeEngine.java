@@ -21,9 +21,9 @@ public class ComputeEngine implements Compute {
 
     @SuppressWarnings("removal")
     public static void main(String[] args) {
-        if(System.getSecurityManager() == null) {
-            System.setSecurityManager(new SecurityManager());
-        }
+//        if(System.getSecurityManager() == null) {
+//            System.setSecurityManager(new SecurityManager());
+//        }
 
         try {
             String name = "Compute";

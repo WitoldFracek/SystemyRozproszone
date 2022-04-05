@@ -15,9 +15,9 @@ public class ComputePi {
 //                System.out.println(file.getName());
 //            }
 //        }
-        if(System.getSecurityManager() == null) {
-            System.setSecurityManager(new SecurityManager());
-        }
+//        if(System.getSecurityManager() == null) {
+//            System.setSecurityManager(new SecurityManager());
+//        }
 
         try {
             String name = "Compute";
