@@ -25,6 +25,8 @@ public class ComputeEngine implements Compute {
 //            System.setSecurityManager(new SecurityManager());
 //        }
 
+        MyData.info();
+
         try {
             String name = "Compute";
             Compute engine = new ComputeEngine();
