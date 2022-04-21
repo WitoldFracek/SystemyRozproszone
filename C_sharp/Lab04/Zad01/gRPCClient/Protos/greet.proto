@@ -5,8 +5,31 @@ option csharp_namespace = "gRPCClient";
 //package greet;
 package mygrpc;
 
+
 service GrpcService {
 	rpc GrpcProc (GrpcRequest) returns (GrpcResponse);
+	rpc CalculateBMI (BMIRequest) returns (BMIResponse);
+	rpc TriangleArea (TriangleRequest) returns (TriangleResponse);
+}
+
+message TriangleRequest {
+	float x1 = 1;
+	float y1 = 2;
+	float x2 = 3;
+	float y2 = 4;
+}
+
+message TriangleResponse {
+	float area = 1;
+}
+
+message BMIResponse {
+	float bmi = 1;
+}
+
+message BMIRequest {
+	float mass = 1;
+	float height = 2;
 }
 
 message GrpcRequest {
@@ -18,19 +41,3 @@ message GrpcResponse {
 	string message = 1;
 	int32 days = 2;
 }
-
-// The greeting service definition.
-//service Greeter {
-  // Sends a greeting
-  //rpc SayHello (HelloRequest) returns (HelloReply); 
-//}
-
-// The request message containing the user's name.
-//message HelloRequest {
-  //string name = 1;
-//}
-
-// The response message containing the greetings.
-//message HelloReply {
-  //string message = 1;
-//}

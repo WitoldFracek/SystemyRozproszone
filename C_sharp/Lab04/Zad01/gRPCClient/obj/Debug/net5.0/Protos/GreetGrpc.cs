@@ -49,6 +49,14 @@ namespace gRPCClient {
     static readonly grpc::Marshaller<global::gRPCClient.GrpcRequest> __Marshaller_mygrpc_GrpcRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.GrpcRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::gRPCClient.GrpcResponse> __Marshaller_mygrpc_GrpcResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.GrpcResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCClient.BMIRequest> __Marshaller_mygrpc_BMIRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.BMIRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCClient.BMIResponse> __Marshaller_mygrpc_BMIResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.BMIResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCClient.TriangleRequest> __Marshaller_mygrpc_TriangleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.TriangleRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCClient.TriangleResponse> __Marshaller_mygrpc_TriangleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCClient.TriangleResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::gRPCClient.GrpcRequest, global::gRPCClient.GrpcResponse> __Method_GrpcProc = new grpc::Method<global::gRPCClient.GrpcRequest, global::gRPCClient.GrpcResponse>(
@@ -57,6 +65,22 @@ namespace gRPCClient {
         "GrpcProc",
         __Marshaller_mygrpc_GrpcRequest,
         __Marshaller_mygrpc_GrpcResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPCClient.BMIRequest, global::gRPCClient.BMIResponse> __Method_CalculateBMI = new grpc::Method<global::gRPCClient.BMIRequest, global::gRPCClient.BMIResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CalculateBMI",
+        __Marshaller_mygrpc_BMIRequest,
+        __Marshaller_mygrpc_BMIResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPCClient.TriangleRequest, global::gRPCClient.TriangleResponse> __Method_TriangleArea = new grpc::Method<global::gRPCClient.TriangleRequest, global::gRPCClient.TriangleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TriangleArea",
+        __Marshaller_mygrpc_TriangleRequest,
+        __Marshaller_mygrpc_TriangleResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -110,6 +134,46 @@ namespace gRPCClient {
       public virtual grpc::AsyncUnaryCall<global::gRPCClient.GrpcResponse> GrpcProcAsync(global::gRPCClient.GrpcRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GrpcProc, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::gRPCClient.BMIResponse CalculateBMI(global::gRPCClient.BMIRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CalculateBMI(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::gRPCClient.BMIResponse CalculateBMI(global::gRPCClient.BMIRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CalculateBMI, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::gRPCClient.BMIResponse> CalculateBMIAsync(global::gRPCClient.BMIRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CalculateBMIAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::gRPCClient.BMIResponse> CalculateBMIAsync(global::gRPCClient.BMIRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CalculateBMI, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::gRPCClient.TriangleResponse TriangleArea(global::gRPCClient.TriangleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TriangleArea(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::gRPCClient.TriangleResponse TriangleArea(global::gRPCClient.TriangleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TriangleArea, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::gRPCClient.TriangleResponse> TriangleAreaAsync(global::gRPCClient.TriangleRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TriangleAreaAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::gRPCClient.TriangleResponse> TriangleAreaAsync(global::gRPCClient.TriangleRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_TriangleArea, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

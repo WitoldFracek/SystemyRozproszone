@@ -1,4 +1,3 @@
-D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.csproj.AssemblyReference.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.GeneratedMSBuildEditorConfig.editorconfig
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.AssemblyInfoInputs.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.AssemblyInfo.cs

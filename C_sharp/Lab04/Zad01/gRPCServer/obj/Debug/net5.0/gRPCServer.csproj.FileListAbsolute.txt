@@ -1,4 +1,3 @@
-D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.csproj.AssemblyReference.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.GeneratedMSBuildEditorConfig.editorconfig
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.AssemblyInfoInputs.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.AssemblyInfo.cs
@@ -28,3 +27,4 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCSer
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\ref\gRPCServer.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.pdb
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.genruntimeconfig.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCServer\obj\Debug\net5.0\gRPCServer.csproj.AssemblyReference.cache

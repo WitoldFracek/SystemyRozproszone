@@ -42,17 +42,17 @@
           "dependencies": {
             "Google.Protobuf": {
               "target": "Package",
-              "version": "[3.20.1-rc1, )"
+              "version": "[3.20.1, )"
             },
             "Grpc.Net.Client": {
               "target": "Package",
-              "version": "[2.45.0-pre1, )"
+              "version": "[2.45.0, )"
             },
             "Grpc.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.45.0, )"
+              "version": "[2.46.0-pre1, )"
             }
           },
           "imports": [

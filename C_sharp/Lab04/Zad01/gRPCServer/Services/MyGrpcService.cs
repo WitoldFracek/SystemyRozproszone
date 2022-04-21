@@ -18,5 +18,27 @@ namespace gRPCServer
             return Task.FromResult(new GrpcResponse { Message = msg, Days = val });
         }
 
+        public override Task<BMIResponse> CalculateBMI(BMIRequest request, ServerCallContext ctx)
+        {
+            float mass = request.Mass;
+            float height = request.Height;
+            float bmi = mass / (height * height);
+            Console.WriteLine($"Mass: {mass}\nHeight: {height}\nBMI: {bmi}");
+            return Task.FromResult(new BMIResponse { Bmi = bmi });
+        }
+
+        public override Task<TriangleResponse> TriangleArea(TriangleRequest request, ServerCallContext ctx)
+        {
+            float x1 = request.X1;
+            float y1 = request.Y1;
+            float x2 = request.X2;
+            float y2 = request.Y2;
+            Console.WriteLine($"Point 1: ({x1}, {y1}");
+            Console.WriteLine($"Point 2: ({x2}, {y2}");
+            float area = 0.5f * Math.Abs(x1 * y2 - x2 * y1);
+            Console.WriteLine($"Area: {area}");
+            return Task.FromResult(new TriangleResponse { Area = area });
+        }
+
     }
 }

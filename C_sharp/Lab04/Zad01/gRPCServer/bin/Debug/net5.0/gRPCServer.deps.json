@@ -34,6 +34,7 @@
       "gRPCServer/1.0.0": {
         "dependencies": {
           "Grpc.AspNetCore": "2.34.0",
+          "Grpc.Tools": "2.46.0-pre1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -344,7 +345,7 @@
         "dependencies": {
           "Google.Protobuf": "3.14.0",
           "Grpc.AspNetCore.Server.ClientFactory": "2.34.0",
-          "Grpc.Tools": "2.34.0"
+          "Grpc.Tools": "2.46.0-pre1"
         }
       },
       "Grpc.AspNetCore.Server/2.34.0": {
@@ -435,7 +436,7 @@
           "lib/net5.0/Grpc.Net.Common.dll": {}
         }
       },
-      "Grpc.Tools/2.34.0": {},
+      "Grpc.Tools/2.46.0-pre1": {},
       "Microsoft.Extensions.Configuration/3.0.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.0.3"
@@ -2245,12 +2246,12 @@
       "path": "grpc.net.common/2.34.0",
       "hashPath": "grpc.net.common.2.34.0.nupkg.sha512"
     },
-    "Grpc.Tools/2.34.0": {
+    "Grpc.Tools/2.46.0-pre1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-klDiY8Xv/VYxK4sLzqGRm3NOXf0IpCsM456g4175qWl/omg8h117Eqiq3ZtywtBAhyDLiLiJAhy9rb/tq9yvXQ==",
-      "path": "grpc.tools/2.34.0",
-      "hashPath": "grpc.tools.2.34.0.nupkg.sha512"
+      "sha512": "sha512-B7fPa5pkJDUnZQD3XisBfa0Je31LKvPCkXl1iZ7L8Bdin0uYyDGJHJcheNPijAgHHG16bf6oAAEhx1VwHF7Itw==",
+      "path": "grpc.tools/2.46.0-pre1",
+      "hashPath": "grpc.tools.2.46.0-pre1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/3.0.3": {
       "type": "package",

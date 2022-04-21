@@ -12,6 +12,7 @@ namespace gRPCServer {
   {
     static readonly string __ServiceName = "mygrpc.GrpcService";
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -26,11 +27,13 @@ namespace gRPCServer {
       context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static class __Helper_MessageCache<T>
     {
       public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
     {
       #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
@@ -42,15 +45,42 @@ namespace gRPCServer {
       return parser.ParseFrom(context.PayloadAsNewBuffer());
     }
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::gRPCServer.GrpcRequest> __Marshaller_mygrpc_GrpcRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.GrpcRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::gRPCServer.GrpcResponse> __Marshaller_mygrpc_GrpcResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.GrpcResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCServer.BMIRequest> __Marshaller_mygrpc_BMIRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.BMIRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCServer.BMIResponse> __Marshaller_mygrpc_BMIResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.BMIResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCServer.TriangleRequest> __Marshaller_mygrpc_TriangleRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.TriangleRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::gRPCServer.TriangleResponse> __Marshaller_mygrpc_TriangleResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::gRPCServer.TriangleResponse.Parser));
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::gRPCServer.GrpcRequest, global::gRPCServer.GrpcResponse> __Method_GrpcProc = new grpc::Method<global::gRPCServer.GrpcRequest, global::gRPCServer.GrpcResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GrpcProc",
         __Marshaller_mygrpc_GrpcRequest,
         __Marshaller_mygrpc_GrpcResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPCServer.BMIRequest, global::gRPCServer.BMIResponse> __Method_CalculateBMI = new grpc::Method<global::gRPCServer.BMIRequest, global::gRPCServer.BMIResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CalculateBMI",
+        __Marshaller_mygrpc_BMIRequest,
+        __Marshaller_mygrpc_BMIResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::gRPCServer.TriangleRequest, global::gRPCServer.TriangleResponse> __Method_TriangleArea = new grpc::Method<global::gRPCServer.TriangleRequest, global::gRPCServer.TriangleResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "TriangleArea",
+        __Marshaller_mygrpc_TriangleRequest,
+        __Marshaller_mygrpc_TriangleResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -62,7 +92,20 @@ namespace gRPCServer {
     [grpc::BindServiceMethod(typeof(GrpcService), "BindService")]
     public abstract partial class GrpcServiceBase
     {
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::gRPCServer.GrpcResponse> GrpcProc(global::gRPCServer.GrpcRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::gRPCServer.BMIResponse> CalculateBMI(global::gRPCServer.BMIRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::gRPCServer.TriangleResponse> TriangleArea(global::gRPCServer.TriangleRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -71,19 +114,25 @@ namespace gRPCServer {
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static grpc::ServerServiceDefinition BindService(GrpcServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_GrpcProc, serviceImpl.GrpcProc).Build();
+          .AddMethod(__Method_GrpcProc, serviceImpl.GrpcProc)
+          .AddMethod(__Method_CalculateBMI, serviceImpl.CalculateBMI)
+          .AddMethod(__Method_TriangleArea, serviceImpl.TriangleArea).Build();
     }
 
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, GrpcServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GrpcProc, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPCServer.GrpcRequest, global::gRPCServer.GrpcResponse>(serviceImpl.GrpcProc));
+      serviceBinder.AddMethod(__Method_CalculateBMI, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPCServer.BMIRequest, global::gRPCServer.BMIResponse>(serviceImpl.CalculateBMI));
+      serviceBinder.AddMethod(__Method_TriangleArea, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::gRPCServer.TriangleRequest, global::gRPCServer.TriangleResponse>(serviceImpl.TriangleArea));
     }
 
   }

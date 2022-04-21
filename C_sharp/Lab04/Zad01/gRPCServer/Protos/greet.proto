@@ -7,6 +7,28 @@ package mygrpc;
 
 service GrpcService {
 	rpc GrpcProc (GrpcRequest) returns (GrpcResponse);
+	rpc CalculateBMI (BMIRequest) returns (BMIResponse);
+	rpc TriangleArea (TriangleRequest) returns (TriangleResponse);
+}
+
+message TriangleRequest {
+	float x1 = 1;
+	float y1 = 2;
+	float x2 = 3;
+	float y2 = 4;
+}
+
+message TriangleResponse {
+	float area = 1;
+}
+
+message BMIResponse {
+	float bmi = 1;
+}
+
+message BMIRequest {
+	float mass = 1;
+	float height = 2;
 }
 
 message GrpcRequest {
@@ -18,6 +40,7 @@ message GrpcResponse {
 	string message = 1;
 	int32 days = 2;
 }
+
 
 // The greeting service definition.
 //service Greeter {
