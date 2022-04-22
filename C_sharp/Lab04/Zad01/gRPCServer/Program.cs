@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using InfoPresenter;
 
 namespace gRPCServer
 {
@@ -12,6 +13,7 @@ namespace gRPCServer
     {
         public static void Main(string[] args)
         {
+            MyData.Info();
             CreateHostBuilder(args).Build().Run();
         }
 
