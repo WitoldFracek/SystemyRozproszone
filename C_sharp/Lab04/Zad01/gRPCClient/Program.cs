@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
+using InfoPresenter;
 
 namespace gRPCClient
 {
@@ -11,6 +12,8 @@ namespace gRPCClient
     {
         static async Task Main(string[] args)
         {
+
+            MyData.Info();
 
             var httpHandler = new HttpClientHandler();
             httpHandler.ServerCertificateCustomValidationCallback =
