@@ -21,10 +21,20 @@ namespace gRPCServer
         public override Task<BMIResponse> CalculateBMI(BMIRequest request, ServerCallContext ctx)
         {
             float mass = request.Mass;
-            float height = request.Height;
-            float bmi = mass / (height * height);
+            int height = request.Height;
+            float meters = (float)height / 100;
+            float bmi = mass / (meters * meters);
             Console.WriteLine($"Mass: {mass}\nHeight: {height}\nBMI: {bmi}");
-            return Task.FromResult(new BMIResponse { Bmi = bmi });
+            string description = "W normie";
+            if(bmi < 18.5)
+            {
+                description = "Niedowaga";
+            }
+            else if(bmi > 24.5)
+            {
+                description = "Nadwaga";
+            }
+            return Task.FromResult(new BMIResponse { Bmi = bmi, Description = description });
         }
 
         public override Task<TriangleResponse> TriangleArea(TriangleRequest request, ServerCallContext ctx)

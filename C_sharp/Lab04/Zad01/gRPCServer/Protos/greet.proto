@@ -24,11 +24,12 @@ message TriangleResponse {
 
 message BMIResponse {
 	float bmi = 1;
+	string description = 2;
 }
 
 message BMIRequest {
 	float mass = 1;
-	float height = 2;
+	int32 height = 2;
 }
 
 message GrpcRequest {

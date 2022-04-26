@@ -38,10 +38,10 @@ namespace gRPCClient
             Console.WriteLine("Enter mass: ");
             float mass = float.Parse(Console.ReadLine());
             Console.WriteLine("Enter height: ");
-            float height = float.Parse(Console.ReadLine());
+            int height = int.Parse(Console.ReadLine());
             var bmiReply = await client.CalculateBMIAsync(new BMIRequest { Mass = mass, Height = height });
 
-            Console.WriteLine($"BMI from server: {bmiReply.Bmi}");
+            Console.WriteLine($"BMI from server: {bmiReply.Bmi}.\nDescription: {bmiReply.Description}");
 
             // Pole trojkata
             Console.WriteLine("Enter vector parameters v1[x1, y1] v2[x2, y2]");

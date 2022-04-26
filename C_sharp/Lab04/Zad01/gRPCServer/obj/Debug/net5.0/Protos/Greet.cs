@@ -26,22 +26,22 @@ namespace gRPCServer {
           string.Concat(
             "ChJQcm90b3MvZ3JlZXQucHJvdG8SBm15Z3JwYyJBCg9UcmlhbmdsZVJlcXVl",
             "c3QSCgoCeDEYASABKAISCgoCeTEYAiABKAISCgoCeDIYAyABKAISCgoCeTIY",
-            "BCABKAIiIAoQVHJpYW5nbGVSZXNwb25zZRIMCgRhcmVhGAEgASgCIhoKC0JN",
-            "SVJlc3BvbnNlEgsKA2JtaRgBIAEoAiIqCgpCTUlSZXF1ZXN0EgwKBG1hc3MY",
-            "ASABKAISDgoGaGVpZ2h0GAIgASgCIigKC0dycGNSZXF1ZXN0EgwKBG5hbWUY",
-            "ASABKAkSCwoDYWdlGAIgASgFIi0KDEdycGNSZXNwb25zZRIPCgdtZXNzYWdl",
-            "GAEgASgJEgwKBGRheXMYAiABKAUywAEKC0dycGNTZXJ2aWNlEjUKCEdycGNQ",
-            "cm9jEhMubXlncnBjLkdycGNSZXF1ZXN0GhQubXlncnBjLkdycGNSZXNwb25z",
-            "ZRI3CgxDYWxjdWxhdGVCTUkSEi5teWdycGMuQk1JUmVxdWVzdBoTLm15Z3Jw",
-            "Yy5CTUlSZXNwb25zZRJBCgxUcmlhbmdsZUFyZWESFy5teWdycGMuVHJpYW5n",
-            "bGVSZXF1ZXN0GhgubXlncnBjLlRyaWFuZ2xlUmVzcG9uc2VCDaoCCmdSUENT",
-            "ZXJ2ZXJiBnByb3RvMw=="));
+            "BCABKAIiIAoQVHJpYW5nbGVSZXNwb25zZRIMCgRhcmVhGAEgASgCIi8KC0JN",
+            "SVJlc3BvbnNlEgsKA2JtaRgBIAEoAhITCgtkZXNjcmlwdGlvbhgCIAEoCSIq",
+            "CgpCTUlSZXF1ZXN0EgwKBG1hc3MYASABKAISDgoGaGVpZ2h0GAIgASgFIigK",
+            "C0dycGNSZXF1ZXN0EgwKBG5hbWUYASABKAkSCwoDYWdlGAIgASgFIi0KDEdy",
+            "cGNSZXNwb25zZRIPCgdtZXNzYWdlGAEgASgJEgwKBGRheXMYAiABKAUywAEK",
+            "C0dycGNTZXJ2aWNlEjUKCEdycGNQcm9jEhMubXlncnBjLkdycGNSZXF1ZXN0",
+            "GhQubXlncnBjLkdycGNSZXNwb25zZRI3CgxDYWxjdWxhdGVCTUkSEi5teWdy",
+            "cGMuQk1JUmVxdWVzdBoTLm15Z3JwYy5CTUlSZXNwb25zZRJBCgxUcmlhbmds",
+            "ZUFyZWESFy5teWdycGMuVHJpYW5nbGVSZXF1ZXN0GhgubXlncnBjLlRyaWFu",
+            "Z2xlUmVzcG9uc2VCDaoCCmdSUENTZXJ2ZXJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.TriangleRequest), global::gRPCServer.TriangleRequest.Parser, new[]{ "X1", "Y1", "X2", "Y2" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.TriangleResponse), global::gRPCServer.TriangleResponse.Parser, new[]{ "Area" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.BMIResponse), global::gRPCServer.BMIResponse.Parser, new[]{ "Bmi" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.BMIResponse), global::gRPCServer.BMIResponse.Parser, new[]{ "Bmi", "Description" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.BMIRequest), global::gRPCServer.BMIRequest.Parser, new[]{ "Mass", "Height" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.GrpcRequest), global::gRPCServer.GrpcRequest.Parser, new[]{ "Name", "Age" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCServer.GrpcResponse), global::gRPCServer.GrpcResponse.Parser, new[]{ "Message", "Days" }, null, null, null, null)
@@ -575,6 +575,7 @@ namespace gRPCServer {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BMIResponse(BMIResponse other) : this() {
       bmi_ = other.bmi_;
+      description_ = other.description_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -596,6 +597,18 @@ namespace gRPCServer {
       }
     }
 
+    /// <summary>Field number for the "description" field.</summary>
+    public const int DescriptionFieldNumber = 2;
+    private string description_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Description {
+      get { return description_; }
+      set {
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -612,6 +625,7 @@ namespace gRPCServer {
         return true;
       }
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Bmi, other.Bmi)) return false;
+      if (Description != other.Description) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -620,6 +634,7 @@ namespace gRPCServer {
     public override int GetHashCode() {
       int hash = 1;
       if (Bmi != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Bmi);
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -642,6 +657,10 @@ namespace gRPCServer {
         output.WriteRawTag(13);
         output.WriteFloat(Bmi);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -656,6 +675,10 @@ namespace gRPCServer {
         output.WriteRawTag(13);
         output.WriteFloat(Bmi);
       }
+      if (Description.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Description);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -668,6 +691,9 @@ namespace gRPCServer {
       int size = 0;
       if (Bmi != 0F) {
         size += 1 + 4;
+      }
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -683,6 +709,9 @@ namespace gRPCServer {
       }
       if (other.Bmi != 0F) {
         Bmi = other.Bmi;
+      }
+      if (other.Description.Length != 0) {
+        Description = other.Description;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -703,6 +732,10 @@ namespace gRPCServer {
             Bmi = input.ReadFloat();
             break;
           }
+          case 18: {
+            Description = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -720,6 +753,10 @@ namespace gRPCServer {
             break;
           case 13: {
             Bmi = input.ReadFloat();
+            break;
+          }
+          case 18: {
+            Description = input.ReadString();
             break;
           }
         }
@@ -788,10 +825,10 @@ namespace gRPCServer {
 
     /// <summary>Field number for the "height" field.</summary>
     public const int HeightFieldNumber = 2;
-    private float height_;
+    private int height_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Height {
+    public int Height {
       get { return height_; }
       set {
         height_ = value;
@@ -814,7 +851,7 @@ namespace gRPCServer {
         return true;
       }
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Mass, other.Mass)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Height, other.Height)) return false;
+      if (Height != other.Height) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -823,7 +860,7 @@ namespace gRPCServer {
     public override int GetHashCode() {
       int hash = 1;
       if (Mass != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Mass);
-      if (Height != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Height);
+      if (Height != 0) hash ^= Height.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -846,9 +883,9 @@ namespace gRPCServer {
         output.WriteRawTag(13);
         output.WriteFloat(Mass);
       }
-      if (Height != 0F) {
-        output.WriteRawTag(21);
-        output.WriteFloat(Height);
+      if (Height != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Height);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -864,9 +901,9 @@ namespace gRPCServer {
         output.WriteRawTag(13);
         output.WriteFloat(Mass);
       }
-      if (Height != 0F) {
-        output.WriteRawTag(21);
-        output.WriteFloat(Height);
+      if (Height != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Height);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -881,8 +918,8 @@ namespace gRPCServer {
       if (Mass != 0F) {
         size += 1 + 4;
       }
-      if (Height != 0F) {
-        size += 1 + 4;
+      if (Height != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Height);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -899,7 +936,7 @@ namespace gRPCServer {
       if (other.Mass != 0F) {
         Mass = other.Mass;
       }
-      if (other.Height != 0F) {
+      if (other.Height != 0) {
         Height = other.Height;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -921,8 +958,8 @@ namespace gRPCServer {
             Mass = input.ReadFloat();
             break;
           }
-          case 21: {
-            Height = input.ReadFloat();
+          case 16: {
+            Height = input.ReadInt32();
             break;
           }
         }
@@ -944,8 +981,8 @@ namespace gRPCServer {
             Mass = input.ReadFloat();
             break;
           }
-          case 21: {
-            Height = input.ReadFloat();
+          case 16: {
+            Height = input.ReadInt32();
             break;
           }
         }
