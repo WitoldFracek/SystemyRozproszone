@@ -20,19 +20,19 @@ namespace gRPCClient
                 HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 
             Console.WriteLine("Starting gRPC Client");
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001",
+            using var channel = GrpcChannel.ForAddress("https://25.77.52.172:5001",
                 new GrpcChannelOptions { HttpHandler = httpHandler });
             var client = new GrpcService.GrpcServiceClient(channel);
 
             // Podstawowe zadanie
-            Console.WriteLine("Enter name: ");
-            String str = Console.ReadLine();
-            Console.WriteLine("Enter age: ");
-            int age = Int32.Parse(Console.ReadLine());
-            var reply = await client.GrpcProcAsync(new GrpcRequest { Name = str, Age = age });
+            //Console.WriteLine("Enter name: ");
+            //String str = Console.ReadLine();
+            //Console.WriteLine("Enter age: ");
+            //int age = Int32.Parse(Console.ReadLine());
+            //var reply = await client.GrpcProcAsync(new GrpcRequest { Name = str, Age = age });
 
-            Console.WriteLine($"From server: {reply.Message}");
-            Console.WriteLine($"From server: {age} years = {reply.Days} days");
+            //Console.WriteLine($"From server: {reply.Message}");
+            //Console.WriteLine($"From server: {age} years = {reply.Days} days");
 
             // BMI
             Console.WriteLine("Enter mass: ");

@@ -19,3 +19,4 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCCli
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\ref\gRPCClient.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.pdb
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.genruntimeconfig.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab04\Zad01\gRPCClient\obj\Debug\net5.0\gRPCClient.csproj.AssemblyReference.cache
