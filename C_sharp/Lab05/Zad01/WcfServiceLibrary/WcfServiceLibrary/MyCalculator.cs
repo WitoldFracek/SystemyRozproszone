@@ -30,6 +30,7 @@ namespace WcfServiceLibrary
     //}
     public class MyCalculator : ICalculator
     {
+        public double sum = 0;
         public double Add(double val1, double val2)
         {
             double result = val1 + val2;
@@ -47,6 +48,12 @@ namespace WcfServiceLibrary
             double result = val1 * val2;
             Console.WriteLine("Method: MULTIPLY, val1: " + val1 + " val2: " + val2 + " result: " + result);
             return result;
+        }
+
+        public double Summarize(double val1)
+        {
+            this.sum = sum + val1;
+            return this.sum;
         }
     }
 }

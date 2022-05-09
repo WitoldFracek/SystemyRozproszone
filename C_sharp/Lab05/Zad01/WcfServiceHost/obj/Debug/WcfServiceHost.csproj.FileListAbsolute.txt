@@ -9,3 +9,14 @@ D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServi
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.exe
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceHost.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceHost.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceHost.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\bin\Debug\WcfServiceLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.csproj.CopyComplete
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceHost\obj\Debug\WcfServiceHost.pdb

@@ -54,5 +54,8 @@ namespace WcfServiceLibrary
         double Sub(double n1, double n2);
         [OperationContract]
         double Multiply(double n1, double n2);
+
+        [OperationContract]
+        double Summarize(double n1);
     }
 }

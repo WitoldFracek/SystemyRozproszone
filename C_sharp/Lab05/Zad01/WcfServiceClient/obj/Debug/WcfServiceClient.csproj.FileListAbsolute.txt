@@ -1,0 +1,11 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceClient.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceClient.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceClient.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\bin\Debug\WcfServiceLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\obj\Debug\WcfServiceClient.csproj.CopyComplete
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\obj\Debug\WcfServiceClient.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceClient\obj\Debug\WcfServiceClient.pdb
