@@ -16,14 +16,10 @@ namespace WcfServiceHost
             // Step 1 Create the URI of service base address
             Uri baseAddress = new Uri("http://localhost:10004/WcfServiceHost");
             // Step 2 Create service instance.
-            ServiceHost myHost = new
-            ServiceHost(typeof(MyCalculator), baseAddress);
+            ServiceHost myHost = new ServiceHost(typeof(MyCalculator), baseAddress);
             // Step 3 Add the endpoint.
             BasicHttpBinding myBinding = new BasicHttpBinding();
-            ServiceEndpoint endpoint1 = myHost.AddServiceEndpoint(
-            typeof(ICalculator),
-            myBinding,
-            "endpoint1");
+            ServiceEndpoint endpoint1 = myHost.AddServiceEndpoint(typeof(ICalculator), myBinding, "endpoint1");
             // Step 4 Set up metadata and publish service metadata
             ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
             smb.HttpGetEnabled = true;
