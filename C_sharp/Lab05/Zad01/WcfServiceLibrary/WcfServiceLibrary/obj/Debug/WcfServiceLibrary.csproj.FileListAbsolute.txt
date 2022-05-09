@@ -1,0 +1,7 @@
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll.config
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.AssemblyReference.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.CoreCompileInputs.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab05\Zad01\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
