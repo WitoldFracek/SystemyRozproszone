@@ -28,6 +28,7 @@ namespace WcfServiceLibrary
     //        return composite;
     //    }
     //}
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class MyCalculator : ICalculator
     {
         public double sum = 0;
@@ -54,6 +55,26 @@ namespace WcfServiceLibrary
         {
             this.sum = sum + val1;
             return this.sum;
+        }
+
+        public double Divide(double val1, double val2)
+        {
+            double result;
+            if(val2 == 0.0)
+            {
+                if(val1 > 0)
+                {
+                    result = double.PositiveInfinity;
+                } else
+                {
+                    result = double.NegativeInfinity;
+                }
+            } else
+            {
+                result = val1 / val2;
+            }
+            Console.WriteLine("Method: DIVIDE, val1: " + val1 + " val2: " + val2 + " result: " + result);
+            return result;
         }
     }
 }

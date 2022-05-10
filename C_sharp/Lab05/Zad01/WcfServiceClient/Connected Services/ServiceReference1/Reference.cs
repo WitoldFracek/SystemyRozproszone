@@ -33,6 +33,12 @@ namespace WcfServiceClient.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Multiply", ReplyAction="http://tempuri.org/ICalculator/MultiplyResponse")]
         System.Threading.Tasks.Task<double> MultiplyAsync(double n1, double n2);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Divide", ReplyAction="http://tempuri.org/ICalculator/DivideResponse")]
+        double Divide(double n1, double n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Divide", ReplyAction="http://tempuri.org/ICalculator/DivideResponse")]
+        System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Summarize", ReplyAction="http://tempuri.org/ICalculator/SummarizeResponse")]
         double Summarize(double n1);
         
@@ -89,6 +95,14 @@ namespace WcfServiceClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task<double> MultiplyAsync(double n1, double n2) {
             return base.Channel.MultiplyAsync(n1, n2);
+        }
+        
+        public double Divide(double n1, double n2) {
+            return base.Channel.Divide(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2) {
+            return base.Channel.DivideAsync(n1, n2);
         }
         
         public double Summarize(double n1) {
