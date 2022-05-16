@@ -1,0 +1,7 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.pdb

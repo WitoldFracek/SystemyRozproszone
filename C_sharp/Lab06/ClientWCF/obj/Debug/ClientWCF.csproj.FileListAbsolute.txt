@@ -1,0 +1,11 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.pdb
