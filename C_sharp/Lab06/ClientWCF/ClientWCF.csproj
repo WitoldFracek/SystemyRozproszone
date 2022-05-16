@@ -45,6 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\AsyncServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ComplexCalcReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -55,6 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\AsyncServiceReference\Async1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AsyncServiceReference\Async2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\AsyncServiceReference\MyComplexCalc.wsdl" />
     <None Include="Connected Services\ComplexCalcReference\Complex.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -77,6 +89,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\AsyncServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\ComplexCalcReference\" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +103,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ComplexCalcReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AsyncServiceReference\Async.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AsyncServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AsyncServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AsyncServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

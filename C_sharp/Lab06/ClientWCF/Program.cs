@@ -1,4 +1,5 @@
 ﻿using ClientWCF.ComplexCalcReference;
+using ClientWCF.AsyncServiceReference;
 using ContractWCFLibrary;
 using System;
 using System.Collections.Generic;
@@ -15,12 +16,12 @@ namespace ClientWCF
         {
             Console.WriteLine("Starting client");
             CCalculatorClient ccc = new CCalculatorClient("BasicHttpBinding_ICCalculator");
-
+            AsyncServiceClient asc = new AsyncServiceClient("BasicHttpBinding_IAsyncService");
             bool end = false;
             while (!end)
             {
                 int index = GetMethod();
-                Complex res = new Complex(0, 0);
+                Complex res = null;
                 double r1 = 0.0;
                 double r2 = 0.0;
                 double i1 = 0.0;
@@ -49,8 +50,16 @@ namespace ClientWCF
                         i2 = GetDouble();
                         res = ccc.sub(new Complex(r1, i1), new Complex(r2, i2));
                         break;
+                    case 3:
+                        Console.WriteLine("Async Fun1 (4s)");
+                        asc.Fun1("Client 2 message");
+                        break;
+                    case 4:
+                        Console.WriteLine("Async Fun2 (2s)");
+                        asc.Fun2("Client 2 message");
+                        break;
                 }
-                if (!end)
+                if (!end && res != null)
                 {
                     Console.WriteLine($"Result: {complexToString(res)}");
                 }
@@ -71,8 +80,10 @@ namespace ClientWCF
         public static int GetMethod()
         {
             Console.WriteLine("\nChoose method:");
-            Console.WriteLine("1. Add");
-            Console.WriteLine("2. Sub");
+            Console.WriteLine("1. Complex Add");
+            Console.WriteLine("2. Complex Sub");
+            Console.WriteLine("3. Async Fun1 (4s)");
+            Console.WriteLine("4. Async Fun2 (2s)");
             Console.WriteLine("0. Exit");
 
             bool isCorrect = false;
@@ -82,7 +93,7 @@ namespace ClientWCF
                 try
                 {
                     index = GetInt();
-                    if (index < 3 && index >= 0)
+                    if (index < 5 && index >= 0)
                     {
                         isCorrect = true;
                     }
