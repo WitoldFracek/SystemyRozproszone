@@ -20,3 +20,6 @@ D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.exe
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\CallbackService.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\CallbackService.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\CallbackService.dll.config

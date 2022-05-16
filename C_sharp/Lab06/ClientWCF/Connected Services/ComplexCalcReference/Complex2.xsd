@@ -31,4 +31,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="mul">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c1" nillable="true" type="q7:Complex" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c2" nillable="true" type="q8:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="mulResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="mulResult" nillable="true" type="q9:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

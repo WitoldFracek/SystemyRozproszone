@@ -5,3 +5,10 @@ D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\CallbackServic
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.csproj.CoreCompileInputs.cache
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.dll
 D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\bin\Debug\CallbackService.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\bin\Debug\CallbackService.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\bin\Debug\CallbackService.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\CallbackService\obj\Debug\CallbackService.pdb

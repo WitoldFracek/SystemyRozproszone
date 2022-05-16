@@ -22,5 +22,11 @@ namespace ContractWCFLibrary
             Console.WriteLine("Called sub");
             return new Complex(c1.real - c2.real, c1.imag - c2.imag);
         }
+
+        Complex ICCalculator.mul(Complex c1, Complex c2)
+        {
+            Console.WriteLine("Called mul");
+            return new Complex(c1.real * c2.real - c1.imag * c2.imag, c1.real * c2.imag + c1.imag * c2.real);
+        }
     }
 }

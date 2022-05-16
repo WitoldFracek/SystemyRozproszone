@@ -42,8 +42,7 @@ namespace CallbackService
     //        set { stringValue = value; }
     //    }
     //}
-    [ServiceContract(SessionMode = SessionMode.Required,
-CallbackContract = typeof(ISuperCalcCallback))]
+    [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(ISuperCalcCallback))]
     public interface ISuperCalc
     {
         [OperationContract(IsOneWay = true)]

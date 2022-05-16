@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.ServiceModel;
 using CallbackService;
+using ClientWCF.SuperCalcReference;
 
 namespace ClientWCF
 {
@@ -53,10 +54,19 @@ namespace ClientWCF
                         res = ccc.sub(new Complex(r1, i1), new Complex(r2, i2));
                         break;
                     case 3:
+                        Console.WriteLine("Complex number 1");
+                        r1 = GetDouble();
+                        i1 = GetDouble();
+                        Console.WriteLine("Complex number 2");
+                        r2 = GetDouble();
+                        i2 = GetDouble();
+                        res = ccc.mul(new Complex(r1, i1), new Complex(r2, i2));
+                        break;
+                    case 4:
                         Console.WriteLine("Async Fun1 (4s)");
                         asc.Fun1("Client 2 message");
                         break;
-                    case 4:
+                    case 5:
                         Console.WriteLine("Async Fun2 (2s)");
                         asc.Fun2("Client 2 message");
                         break;
@@ -68,10 +78,10 @@ namespace ClientWCF
             }
 
             ccc.Close();
+            asc.Close();
 
             Console.WriteLine("CLIENT2 – START (Async service)");
-            AsyncServiceClient client2 = new
-            AsyncServiceClient("BasicHttpBinding_IAsyncService");
+            AsyncServiceClient client2 = new AsyncServiceClient("BasicHttpBinding_IAsyncService");
             Console.WriteLine("...calling Fun 1");
             client2.Fun1("Client2");
             Thread.Sleep(10);
@@ -90,20 +100,18 @@ namespace ClientWCF
             SuperCalcCallback myCbBHandler = new SuperCalcCallback();
             InstanceContext instanceContext = new
             InstanceContext(myCbBHandler);
-            SuperCalcClient client3 = new
-            SuperCalcClient(instanceContext);
-            double value1 = 10;
+            SuperCalcClient client3 = new SuperCalcClient(instanceContext);
+            double value1 = 10.0;
             Console.WriteLine("...call of Factorial({0})...", value1);
             client3.Factorial(value1);
             int value2 = 5;
             Console.WriteLine("...call of DoSomething...");
             client3.DoSomething(value2);
-            value1 = 20;
+            value1 = 20.0;
             Console.WriteLine("...call of Factorial({0})...", value1);
             client3.Factorial(value1);
             Console.WriteLine("--> Client must wait for the results");
-            Console.WriteLine("--> Press ENTER after receiving ALL
-            results");
+            Console.WriteLine("--> Press ENTER after receiving ALL results");
             Console.ReadLine();
             client3.Close();
             Console.WriteLine("CLIENT3 - STOP");
@@ -123,8 +131,9 @@ namespace ClientWCF
             Console.WriteLine("\nChoose method:");
             Console.WriteLine("1. Complex Add");
             Console.WriteLine("2. Complex Sub");
-            Console.WriteLine("3. Async Fun1 (4s)");
-            Console.WriteLine("4. Async Fun2 (2s)");
+            Console.WriteLine("3. Complex Mul");
+            Console.WriteLine("4. Async Fun1 (4s)");
+            Console.WriteLine("5. Async Fun2 (2s)");
             Console.WriteLine("0. Exit");
 
             bool isCorrect = false;
@@ -134,7 +143,7 @@ namespace ClientWCF
                 try
                 {
                     index = GetInt();
-                    if (index < 5 && index >= 0)
+                    if (index < 6 && index >= 0)
                     {
                         isCorrect = true;
                     }

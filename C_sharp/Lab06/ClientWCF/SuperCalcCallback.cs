@@ -3,7 +3,7 @@ using System;
 
 namespace ClientWCF
 {
-    class SuperCalcCallback : ISuperCalcCallback
+    class SuperCalcCallback : SuperCalcReference.ISuperCalcCallback
     {
         public void FactorialResult(double result)
         {
