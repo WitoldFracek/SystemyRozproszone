@@ -7,6 +7,7 @@ using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 using ContractWCFLibrary;
+using CallbackService;
 
 namespace HostWCF
 {
@@ -25,6 +26,13 @@ namespace HostWCF
             ServiceHost myHost2 = new ServiceHost(typeof(AsyncService), baseAddress2);
             ServiceEndpoint endpoint2 = myHost2.AddServiceEndpoint(typeof(IAsyncService), myBinding, "endpoint2");
 
+            Uri baseAddress3 = new Uri("http://localhost:10004/Super");
+            ServiceHost myHost3 = new
+            ServiceHost(typeof(MySuperCalc), baseAddress3);
+            WSDualHttpBinding myBinding3 = new WSDualHttpBinding();
+            ServiceEndpoint endpoint3 = myHost3.AddServiceEndpoint(typeof(ISuperCalc), myBinding3, "ThirdService");
+            
+
             //WSHttpBinding myBinding2 = new WSHttpBinding();
             //myBinding2.Security.Mode = SecurityMode.None;
             //ServiceEndpoint endpoint2 = myHost.AddServiceEndpoint(typeof(ICCalculator), myBinding2, "endpoint2");
@@ -33,12 +41,15 @@ namespace HostWCF
             smb.HttpGetEnabled = true;
             myHost.Description.Behaviors.Add(smb);
             myHost2.Description.Behaviors.Add(smb);
+            myHost3.Description.Behaviors.Add(smb);
 
             try
             {
                 myHost.Open();
                 myHost2.Open();
+                myHost3.Open();               
                 Console.WriteLine("-->Service started.");
+                Console.WriteLine("--> Callback SuperCalc is running.");
                 Console.WriteLine("-->Endpoints:");
                 Console.WriteLine($"    Service endpoint: {endpoint1.Name}");
                 Console.WriteLine($"    Binding: {endpoint1.Binding}");
@@ -51,12 +62,15 @@ namespace HostWCF
                 Console.ReadLine(); // to not finish app immediately:
                 myHost.Close();
                 myHost2.Close();
+                myHost3.Close();
+                Console.WriteLine("--> Callback SuperCalc finished");
             }
             catch (CommunicationException ce)
             {
                 Console.WriteLine("-->Exception occurred: {0}", ce.Message);
                 myHost.Abort();
                 myHost2.Abort();
+                myHost3.Abort();
             }
         }
     }

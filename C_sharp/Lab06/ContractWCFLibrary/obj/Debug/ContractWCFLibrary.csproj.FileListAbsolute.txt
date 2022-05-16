@@ -5,3 +5,10 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLi
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.csproj.CoreCompileInputs.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.dll.config
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.dll
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\bin\Debug\ContractWCFLibrary.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.csproj.AssemblyReference.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.csproj.CoreCompileInputs.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.dll
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ContractWCFLibrary\obj\Debug\ContractWCFLibrary.pdb

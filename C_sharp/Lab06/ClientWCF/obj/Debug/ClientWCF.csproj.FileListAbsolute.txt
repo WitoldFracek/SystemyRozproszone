@@ -9,3 +9,14 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.exe
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.exe.config
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.exe
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ClientWCF.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.dll
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.pdb
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\bin\Debug\ContractWCFLibrary.dll.config
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.AssemblyReference.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CoreCompileInputs.cache
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.csproj.CopyComplete
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.exe
+D:\STUDIA\Semestr VI\RSI\RSI_LAB\SystemyRozproszone\C_sharp\Lab06\ClientWCF\obj\Debug\ClientWCF.pdb
