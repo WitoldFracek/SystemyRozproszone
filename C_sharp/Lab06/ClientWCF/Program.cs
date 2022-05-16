@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.ServiceModel;
+using CallbackService;
 
 namespace ClientWCF
 {
@@ -82,6 +84,29 @@ namespace ClientWCF
             Console.ReadLine();
             client2.Close();
             Console.WriteLine("CLIENT2 - STOP");
+
+
+            Console.WriteLine("\nCLIENT3 – START (Callbacks):");
+            SuperCalcCallback myCbBHandler = new SuperCalcCallback();
+            InstanceContext instanceContext = new
+            InstanceContext(myCbBHandler);
+            SuperCalcClient client3 = new
+            SuperCalcClient(instanceContext);
+            double value1 = 10;
+            Console.WriteLine("...call of Factorial({0})...", value1);
+            client3.Factorial(value1);
+            int value2 = 5;
+            Console.WriteLine("...call of DoSomething...");
+            client3.DoSomething(value2);
+            value1 = 20;
+            Console.WriteLine("...call of Factorial({0})...", value1);
+            client3.Factorial(value1);
+            Console.WriteLine("--> Client must wait for the results");
+            Console.WriteLine("--> Press ENTER after receiving ALL
+            results");
+            Console.ReadLine();
+            client3.Close();
+            Console.WriteLine("CLIENT3 - STOP");
         }
 
         public static string complexToString(Complex c)
