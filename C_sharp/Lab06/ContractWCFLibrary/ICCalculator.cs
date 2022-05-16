@@ -36,18 +36,19 @@ namespace ContractWCFLibrary
             set { description = value; }
         }
 
-        [DataMember]
-        public string Str
-        {
-            get
-            {
-                if (imag >= 0)
-                {
-                    return $"{real} + {imag}i";
-                }
-                return $"{real} - {Math.Abs(imag)}i";
-            }
-        }
+        //[DataMember]
+        //public string Str
+        //{
+        //    get
+        //    {
+        //        if (imag >= 0)
+        //        {
+        //            return $"{real} + {imag}i";
+        //        }
+        //        return $"{real} - {Math.Abs(imag)}i";
+        //    }
+        //    set { }
+        //}
 
         public Complex(double r, double i)
         {

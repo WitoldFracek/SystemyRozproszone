@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="abcdff34-2bc8-480f-84fb-66e804f47900" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10004/Complex" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Complex.xsd" MetadataType="Schema" ID="fb064bca-986f-4cce-9098-e6ca1264443c" SourceId="1" SourceUrl="http://localhost:10004/Complex?xsd=xsd2" />
+    <MetadataFile FileName="Complex1.xsd" MetadataType="Schema" ID="be4a30ba-df84-4b77-98bd-ea6b7b04e643" SourceId="1" SourceUrl="http://localhost:10004/Complex?xsd=xsd1" />
+    <MetadataFile FileName="Complex.disco" MetadataType="Disco" ID="cc58e5c3-f79b-4d2f-a3a2-2e3c523edfd6" SourceId="1" SourceUrl="http://localhost:10004/Complex?disco" />
+    <MetadataFile FileName="MyComplexCalc.wsdl" MetadataType="Wsdl" ID="10a99206-4234-4225-b946-678aa24571f9" SourceId="1" SourceUrl="http://localhost:10004/Complex?wsdl" />
+    <MetadataFile FileName="Complex2.xsd" MetadataType="Schema" ID="91cd07f9-cf5b-4d60-bb83-0e9f8672598b" SourceId="1" SourceUrl="http://localhost:10004/Complex?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:10004/Complex?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" />
+  <xs:element name="add">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c1" nillable="true" type="q1:Complex" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c2" nillable="true" type="q2:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="addResult" nillable="true" type="q3:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sub">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c1" nillable="true" type="q4:Complex" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c2" nillable="true" type="q5:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="subResult" nillable="true" type="q6:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
