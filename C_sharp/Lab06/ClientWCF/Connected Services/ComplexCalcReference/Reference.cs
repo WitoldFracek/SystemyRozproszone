@@ -32,6 +32,12 @@ namespace ClientWCF.ComplexCalcReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICCalculator/mul", ReplyAction="http://tempuri.org/ICCalculator/mulResponse")]
         System.Threading.Tasks.Task<ContractWCFLibrary.Complex> mulAsync(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICCalculator/div", ReplyAction="http://tempuri.org/ICCalculator/divResponse")]
+        ContractWCFLibrary.Complex div(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICCalculator/div", ReplyAction="http://tempuri.org/ICCalculator/divResponse")]
+        System.Threading.Tasks.Task<ContractWCFLibrary.Complex> divAsync(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -83,6 +89,14 @@ namespace ClientWCF.ComplexCalcReference {
         
         public System.Threading.Tasks.Task<ContractWCFLibrary.Complex> mulAsync(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2) {
             return base.Channel.mulAsync(c1, c2);
+        }
+        
+        public ContractWCFLibrary.Complex div(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2) {
+            return base.Channel.div(c1, c2);
+        }
+        
+        public System.Threading.Tasks.Task<ContractWCFLibrary.Complex> divAsync(ContractWCFLibrary.Complex c1, ContractWCFLibrary.Complex c2) {
+            return base.Channel.divAsync(c1, c2);
         }
     }
 }

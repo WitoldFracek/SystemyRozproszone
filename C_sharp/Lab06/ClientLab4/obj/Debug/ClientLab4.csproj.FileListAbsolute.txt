@@ -1,0 +1,11 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\obj\Debug\ClientLab4.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\obj\Debug\ClientLab4.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ClientLab4.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ClientLab4.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ClientLab4.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ContractWCFLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ContractWCFLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\bin\Debug\ContractWCFLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\obj\Debug\ClientLab4.csproj.CopyComplete
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\obj\Debug\ClientLab4.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\ClientLab4\obj\Debug\ClientLab4.pdb

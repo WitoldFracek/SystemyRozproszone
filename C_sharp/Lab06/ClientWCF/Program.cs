@@ -63,10 +63,19 @@ namespace ClientWCF
                         res = ccc.mul(new Complex(r1, i1), new Complex(r2, i2));
                         break;
                     case 4:
+                        Console.WriteLine("Complex number 1");
+                        r1 = GetDouble();
+                        i1 = GetDouble();
+                        Console.WriteLine("Complex number 2");
+                        r2 = GetDouble();
+                        i2 = GetDouble();
+                        res = ccc.div(new Complex(r1, i1), new Complex(r2, i2));
+                        break;
+                    case 5:
                         Console.WriteLine("Async Fun1 (4s)");
                         asc.Fun1("Client 2 message");
                         break;
-                    case 5:
+                    case 6:
                         Console.WriteLine("Async Fun2 (2s)");
                         asc.Fun2("Client 2 message");
                         break;
@@ -132,8 +141,9 @@ namespace ClientWCF
             Console.WriteLine("1. Complex Add");
             Console.WriteLine("2. Complex Sub");
             Console.WriteLine("3. Complex Mul");
-            Console.WriteLine("4. Async Fun1 (4s)");
-            Console.WriteLine("5. Async Fun2 (2s)");
+            Console.WriteLine("4. Complex Div");
+            Console.WriteLine("5. Async Fun1 (4s)");
+            Console.WriteLine("6. Async Fun2 (2s)");
             Console.WriteLine("0. Exit");
 
             bool isCorrect = false;
@@ -143,7 +153,7 @@ namespace ClientWCF
                 try
                 {
                     index = GetInt();
-                    if (index < 6 && index >= 0)
+                    if (index < 7 && index >= 0)
                     {
                         isCorrect = true;
                     }

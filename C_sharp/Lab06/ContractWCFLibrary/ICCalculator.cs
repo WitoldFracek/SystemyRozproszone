@@ -19,6 +19,10 @@ namespace ContractWCFLibrary
 
         [OperationContract]
         Complex mul(Complex c1, Complex c2);
+
+        [OperationContract]
+        Complex div(Complex c1, Complex c2);
+
     }
 
     [DataContract]

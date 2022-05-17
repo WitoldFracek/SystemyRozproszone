@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MyStudent" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:10004/Student?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:10004/Student?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:10004/Student?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IStudent_UpperName_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpperName" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_UpperName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpperNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_AgeInMonths_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgeInMonths" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_AgeInMonths_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgeInMonthsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IStudent">
+    <wsdl:operation name="UpperName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudent/UpperName" message="tns:IStudent_UpperName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudent/UpperNameResponse" message="tns:IStudent_UpperName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgeInMonths">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudent/AgeInMonths" message="tns:IStudent_AgeInMonths_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudent/AgeInMonthsResponse" message="tns:IStudent_AgeInMonths_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IStudent" type="tns:IStudent">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpperName">
+      <soap:operation soapAction="http://tempuri.org/IStudent/UpperName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgeInMonths">
+      <soap:operation soapAction="http://tempuri.org/IStudent/AgeInMonths" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyStudent">
+    <wsdl:port name="BasicHttpBinding_IStudent" binding="tns:BasicHttpBinding_IStudent">
+      <soap:address location="http://localhost:10004/Student/endpoint1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

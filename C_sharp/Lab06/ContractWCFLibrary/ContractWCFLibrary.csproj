@@ -47,6 +47,8 @@
     <Compile Include="AsyncService.cs" />
     <Compile Include="IAsyncService.cs" />
     <Compile Include="ICCalculator.cs" />
+    <Compile Include="IStudent.cs" />
+    <Compile Include="MyStudent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyComplexCalc.cs" />
   </ItemGroup>

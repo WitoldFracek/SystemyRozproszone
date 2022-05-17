@@ -1,0 +1,11 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\HostLab4.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\HostLab4.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\HostLab4.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\obj\Debug\HostLab4.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\obj\Debug\HostLab4.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\obj\Debug\HostLab4.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\obj\Debug\HostLab4.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\ContractWCFLibrary.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\ContractWCFLibrary.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\bin\Debug\ContractWCFLibrary.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab06\HostLab4\obj\Debug\HostLab4.csproj.CopyComplete

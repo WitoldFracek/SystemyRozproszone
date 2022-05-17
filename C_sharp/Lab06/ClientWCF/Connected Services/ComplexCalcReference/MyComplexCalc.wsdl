@@ -25,6 +25,12 @@
   <wsdl:message name="ICCalculator_mul_OutputMessage">
     <wsdl:part name="parameters" element="tns:mulResponse" />
   </wsdl:message>
+  <wsdl:message name="ICCalculator_div_InputMessage">
+    <wsdl:part name="parameters" element="tns:div" />
+  </wsdl:message>
+  <wsdl:message name="ICCalculator_div_OutputMessage">
+    <wsdl:part name="parameters" element="tns:divResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICCalculator">
     <wsdl:operation name="add">
       <wsdl:input wsaw:Action="http://tempuri.org/ICCalculator/add" message="tns:ICCalculator_add_InputMessage" />
@@ -37,6 +43,10 @@
     <wsdl:operation name="mul">
       <wsdl:input wsaw:Action="http://tempuri.org/ICCalculator/mul" message="tns:ICCalculator_mul_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICCalculator/mulResponse" message="tns:ICCalculator_mul_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="div">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICCalculator/div" message="tns:ICCalculator_div_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICCalculator/divResponse" message="tns:ICCalculator_div_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICCalculator" type="tns:ICCalculator">
@@ -61,6 +71,15 @@
     </wsdl:operation>
     <wsdl:operation name="mul">
       <soap:operation soapAction="http://tempuri.org/ICCalculator/mul" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="div">
+      <soap:operation soapAction="http://tempuri.org/ICCalculator/div" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

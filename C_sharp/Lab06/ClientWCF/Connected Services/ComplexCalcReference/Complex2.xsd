@@ -46,4 +46,19 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="div">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c1" nillable="true" type="q10:Complex" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="c2" nillable="true" type="q11:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="divResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ContractWCFLibrary" minOccurs="0" name="divResult" nillable="true" type="q12:Complex" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>
