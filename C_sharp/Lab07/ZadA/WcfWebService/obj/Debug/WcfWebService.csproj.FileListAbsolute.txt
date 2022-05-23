@@ -1,0 +1,6 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\bin\WcfWebService.dll.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\bin\WcfWebService.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\bin\WcfWebService.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.pdb
