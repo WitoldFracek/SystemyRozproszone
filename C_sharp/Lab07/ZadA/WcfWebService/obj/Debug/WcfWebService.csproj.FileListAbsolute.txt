@@ -4,3 +4,4 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebSe
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.csproj.CoreCompileInputs.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfWebService\obj\Debug\WcfWebService.csproj.AssemblyReference.cache

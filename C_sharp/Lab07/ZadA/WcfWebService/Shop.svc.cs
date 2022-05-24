@@ -16,8 +16,8 @@ namespace WcfWebService
     {
         private static List<Book> dataset = new List<Book>()
         {
-            new Book{ Id = 0, Title = "Quo Vadis", Author = "Henryk Sienkiewicz", Price = 20.34 },
-            new Book{ Id = 1, Title = "Dziady", Author = "Adam Mickiewicz", Price = 35.00 },
+            new Book{ Id = 0, Title = "Bieguni", Author = "Olga Tokarczuk", Price = 20.34 },
+            new Book{ Id = 1, Title = "Black Out", Author = "Marc Elsberg", Price = 35.00 },
             new Book{ Id = 2, Title = "Wiedźmin", Author = "Andrzej Sapkowski", Price = 32.05 }
         };
 
@@ -31,6 +31,11 @@ namespace WcfWebService
             if (book == null)
             {
                 throw new WebFaultException<string>("400: Bad request", HttpStatusCode.BadRequest);
+            }
+            if(-1 != dataset.FindIndex(b => b.Title.ToLower() == book.Title.ToLower()
+            && b.Author.ToLower() == book.Author.ToLower()))
+            {
+                throw new WebFaultException<string>("409: Book already exists", HttpStatusCode.Conflict);
             }
             int newId = dataset.Max(b => b.Id) + 1;
             book.Id = newId;
