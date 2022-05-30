@@ -24,6 +24,23 @@ namespace WcfWebService
         public double Price { get; set; }
     }
 
+    [DataContract]
+    public class MyDataPackage
+    {
+        [DataMember(Order = 0)]
+        public string Data
+        {
+            get
+            {
+                return InfoPresenter.MyData.InfoString();
+            }
+            set
+            {
+
+            }
+        }
+    }
+
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
     [ServiceContract]
     public interface IShop
@@ -59,5 +76,21 @@ namespace WcfWebService
         [OperationContract]
         [WebInvoke(UriTemplate = "/json/books/{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
         string DeleteJson(string id);
+
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/books", Method = "PUT", RequestFormat = WebMessageFormat.Xml)]
+        string ModifyXml(Book book);
+
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/json/books", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
+        string ModifyJson(Book book);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/MyData", ResponseFormat = WebMessageFormat.Xml)]
+        MyDataPackage GetMyDataXml();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/json/MyData", ResponseFormat = WebMessageFormat.Json)]
+        MyDataPackage GetMyDataJson();
     }
 }

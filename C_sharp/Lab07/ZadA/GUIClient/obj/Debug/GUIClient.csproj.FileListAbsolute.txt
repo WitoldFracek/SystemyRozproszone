@@ -1,0 +1,17 @@
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\GUIClient.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\GUIClient.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\GUIClient.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\Newtonsoft.Json.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\WcfClient.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\WcfClient.exe.config
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\Newtonsoft.Json.xml
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.csproj.AssemblyReference.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.AddAndEditForm.resources
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.BookForm.resources
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.Properties.Resources.resources
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.csproj.GenerateResource.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.csproj.CoreCompileInputs.cache
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.csproj.CopyComplete
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.exe
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\obj\Debug\GUIClient.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\GUIClient\bin\Debug\WcfClient.pdb

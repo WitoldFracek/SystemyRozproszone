@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using InfoPresenter;
 
 namespace WcfClient
@@ -28,18 +29,20 @@ namespace WcfClient
 
                     req.KeepAlive = false;
                     req.Method = method;
-                    if(format == "xml")
+                    if (format == "xml")
                     {
                         req.ContentType = "text/xml";
-                    } else if(format == "json")
+                    }
+                    else if (format == "json")
                     {
                         req.ContentType = "application/json";
-                    } else
+                    }
+                    else
                     {
                         Print("Podałeś złe dane!");
                         continue;
                     }
-                    switch(method)
+                    switch (method)
                     {
                         case "GET":
                             break;

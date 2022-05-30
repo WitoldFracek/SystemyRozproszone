@@ -1,7 +1,9 @@
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\bin\Debug\WcfClient.exe.config
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\bin\Debug\WcfClient.exe
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\bin\Debug\WcfClient.pdb
-D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\obj\Debug\WcfClient.csproj.AssemblyReference.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\obj\Debug\WcfClient.csproj.CoreCompileInputs.cache
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\obj\Debug\WcfClient.exe
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\obj\Debug\WcfClient.pdb
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\bin\Debug\Newtonsoft.Json.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\bin\Debug\Newtonsoft.Json.xml
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab07\ZadA\WcfClient\obj\Debug\WcfClient.csproj.CopyComplete

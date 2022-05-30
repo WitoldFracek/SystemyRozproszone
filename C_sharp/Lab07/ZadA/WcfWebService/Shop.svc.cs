@@ -18,7 +18,7 @@ namespace WcfWebService
         {
             new Book{ Id = 0, Title = "Bieguni", Author = "Olga Tokarczuk", Price = 20.34 },
             new Book{ Id = 1, Title = "Black Out", Author = "Marc Elsberg", Price = 35.00 },
-            new Book{ Id = 2, Title = "Wiedźmin", Author = "Andrzej Sapkowski", Price = 32.05 }
+            new Book{ Id = 2, Title = "Wiedzmin", Author = "Andrzej Sapkowski", Price = 32.05 }
         };
 
         public string AddJson(Book book)
@@ -79,12 +79,43 @@ namespace WcfWebService
         public Book GetByIdXml(string id)
         {
             int identifier = int.Parse(id);
-            int index = dataset.FindIndex(b => b.Id == identifier);
+            int index = FindBookIndex(identifier);
             if (index == -1)
             {
                 throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
             }
             return dataset[index];
+        }
+
+        public MyDataPackage GetMyDataJson()
+        {
+            return GetMyDataXml();
+        }
+
+        public MyDataPackage GetMyDataXml()
+        {
+            return new MyDataPackage { Data = InfoPresenter.MyData.InfoString() };
+        }
+
+        public string ModifyJson(Book book)
+        {
+            return ModifyXml(book);
+        }
+
+        public string ModifyXml(Book book)
+        {
+            int index = FindBookIndex(book.Id);
+            if(index == -1)
+            {
+                throw new WebFaultException<string>("404: Not Found", HttpStatusCode.NotFound);
+            }
+            dataset[index] = book;
+            return "Book modified";
+        }
+
+        private int FindBookIndex(int id)
+        {
+            return dataset.FindIndex(b => b.Id == id);
         }
     }
 }
