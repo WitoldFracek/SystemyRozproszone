@@ -35,6 +35,8 @@ namespace GUIClient
             this.MyDataInfoButton = new System.Windows.Forms.Button();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.BooksListBox = new System.Windows.Forms.ListBox();
+            this.RefreshButton = new System.Windows.Forms.Button();
+            this.MyDataClientButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddButton
@@ -69,11 +71,11 @@ namespace GUIClient
             // 
             // MyDataInfoButton
             // 
-            this.MyDataInfoButton.Location = new System.Drawing.Point(612, 12);
+            this.MyDataInfoButton.Location = new System.Drawing.Point(595, 12);
             this.MyDataInfoButton.Name = "MyDataInfoButton";
-            this.MyDataInfoButton.Size = new System.Drawing.Size(77, 77);
+            this.MyDataInfoButton.Size = new System.Drawing.Size(94, 77);
             this.MyDataInfoButton.TabIndex = 3;
-            this.MyDataInfoButton.Text = "MyData";
+            this.MyDataInfoButton.Text = "MyDataService";
             this.MyDataInfoButton.UseVisualStyleBackColor = true;
             this.MyDataInfoButton.Click += new System.EventHandler(this.MyDataInfoButton_Click);
             // 
@@ -96,11 +98,33 @@ namespace GUIClient
             this.BooksListBox.TabIndex = 5;
             this.BooksListBox.SelectedIndexChanged += new System.EventHandler(this.BooksListBox_SelectedIndexChanged);
             // 
+            // RefreshButton
+            // 
+            this.RefreshButton.Location = new System.Drawing.Point(261, 12);
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.Size = new System.Drawing.Size(77, 77);
+            this.RefreshButton.TabIndex = 6;
+            this.RefreshButton.Text = "Refresh";
+            this.RefreshButton.UseVisualStyleBackColor = true;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
+            // 
+            // MyDataClientButton
+            // 
+            this.MyDataClientButton.Location = new System.Drawing.Point(495, 12);
+            this.MyDataClientButton.Name = "MyDataClientButton";
+            this.MyDataClientButton.Size = new System.Drawing.Size(94, 77);
+            this.MyDataClientButton.TabIndex = 7;
+            this.MyDataClientButton.Text = "MyDataClient";
+            this.MyDataClientButton.UseVisualStyleBackColor = true;
+            this.MyDataClientButton.Click += new System.EventHandler(this.MyDataClientButton_Click);
+            // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 450);
+            this.Controls.Add(this.MyDataClientButton);
+            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.BooksListBox);
             this.Controls.Add(this.TitleTextBox);
             this.Controls.Add(this.MyDataInfoButton);
@@ -122,5 +146,7 @@ namespace GUIClient
         private System.Windows.Forms.Button MyDataInfoButton;
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.ListBox BooksListBox;
+        private System.Windows.Forms.Button RefreshButton;
+        private System.Windows.Forms.Button MyDataClientButton;
     }
 }

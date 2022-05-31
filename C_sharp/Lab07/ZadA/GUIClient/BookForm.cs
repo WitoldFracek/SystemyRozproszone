@@ -89,5 +89,15 @@ namespace GUIClient
         {
 
         }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            UpdateList();
+        }
+
+        private void MyDataClientButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(InfoPresenter.MyData.InfoString());
+        }
     }
 }

@@ -72,8 +72,10 @@ namespace GUIClient
 
     public class GuiClient
     {
-        private static string bookHttpAddress = "http://localhost:54458/Shop.svc/json/books";
-        private static string myDataHttpAddress = "http://localhost:54458/Shop.svc/json/MyData";
+        //private static string bookHttpAddress = "http://localhost:54458/Shop.svc/json/books";
+        //private static string myDataHttpAddress = "http://localhost:54458/Shop.svc/json/MyData";
+        private static string bookHttpAddress = "http://zpi02.solidcp.ii.pwr.edu.pl/Shop.svc/json/books";
+        private static string myDataHttpAddress = "http://zpi02.solidcp.ii.pwr.edu.pl/Shop.svc/json/MyData";
         private static Encoding encoding = Encoding.GetEncoding(1252);
 
         public static string GetMyData()
