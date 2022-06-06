@@ -11,22 +11,28 @@ namespace InfoPresenter
     {
         public static void Info()
         {
+            Console.WriteLine(InfoString());
+            Console.WriteLine();
+        }
+
+        public static string InfoString()
+        {
             var date = DateTime.Now;
-            Console.WriteLine(date.ToString("yyyy/MM/dd HH:mm:ss"));
-            Console.WriteLine("Witold Frącek 254511");
-            Console.WriteLine(Environment.UserName);
-            Console.WriteLine(Environment.OSVersion);
-            Console.WriteLine(Environment.Version);
+            string ret = date.ToString("yyyy/MM/dd HH:mm:ss") + "\n";
+            ret += "Witold Frącek 254511\n";
+            ret += Environment.UserName + "\n";
+            ret += Environment.OSVersion + "\n";
+            ret += Environment.Version + "\n";
             var host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (var ip in host.AddressList)
             {
                 if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                 {
-                    Console.WriteLine(ip);
+                    ret += ip.ToString();
                     break;
                 }
             }
-            Console.WriteLine();
+            return ret;
         }
 
     }
