@@ -48,6 +48,12 @@ namespace WebClientMVC
 
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.MapControllerRoute(
+                //    name: "Book",
+                //    pattern: "Book/Index",
+                //    defaults: new {controller = "Book", action = "Index"}
+                //    );
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

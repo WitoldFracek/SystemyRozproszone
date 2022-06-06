@@ -16,7 +16,8 @@ namespace WcfServiceLibrary
         {
             new Book { Id = 0, Title = "Pani jeziora", Author = "Andrzej Sapkowski", Price = 34.5 },
             new Book { Id = 1, Title = "Bieguni", Author = "Olga Tokarczuk", Price = 40.7 },
-            new Book { Id = 2, Title = "Helisa", Author = "Marc Elsberg", Price = 50.2 }
+            new Book { Id = 2, Title = "Helisa", Author = "Marc Elsberg", Price = 50.2 },
+            new Book {Id = 3, Title = "Miecz przeznaczenia", Author = "Andrzej Sapkowski", Price = 30.0 }
         };
         public string AddBookJson(Book book)
         {
@@ -27,7 +28,7 @@ namespace WcfServiceLibrary
         {
             if (book == null)
             {
-                throw new WebFaultException<string>("400: Bad Request", System.Net.HttpStatusCode.BadRequest);
+                return "400: Bad Request. Book does not exist."; ;
             }
             int unusedIndex = _books.Max(b => b.Id) + 1;
             _books.Add(book);
@@ -84,6 +85,23 @@ namespace WcfServiceLibrary
                 return null;
             return _books.ElementAt(idx);
         }
+
+        public string ModifyBookXml(Book book)
+        {
+            int index = _books.FindIndex(b => b.Id == book.Id);
+            if(index == -1)
+            {
+                return $"404: Not found";
+            }
+            _books[index] = book;
+            return "Book modified";
+        }
+
+        public string ModifyBookJson(Book book)
+        {
+            return ModifyBookXml(book);
+        }
+        
 
         public DataDescription GetMyData()
         {

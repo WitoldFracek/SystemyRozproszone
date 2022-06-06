@@ -14,17 +14,22 @@ namespace WebClientMVC.Controllers
         // GET: BookController
         public ActionResult Index()
         {
-            //try
-            //{
-            //    allBooks = 
-            //}
-            return View();
+            try
+            {
+                allBooks = Client.GetBooks();
+                return View(allBooks);
+            }
+            catch (Exception ex)
+            {
+                return View("NoRunning");
+            }
         }
 
         // GET: BookController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
+            return View(book);
         }
 
         // GET: BookController/Create
@@ -36,43 +41,69 @@ namespace WebClientMVC.Controllers
         // POST: BookController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([Bind("Id,Title,Author,Price")] Book book)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                book.Id = 0;
+                try
+                {
+                    Client.AddNewBook(book);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    return View("NoRunning");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            return View(book);
         }
 
         // GET: BookController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
+            return View(book);
         }
 
         // POST: BookController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, [Bind("Id,Title,Author,Price")] Book book)
         {
-            try
+            if (id != book.Id)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
+
+            if (ModelState.IsValid)
             {
-                return View();
+                try
+                {
+                    Client.ModifyBook(book);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    return View("NoRunning");
+                }
             }
+            return View(book);
         }
 
         // GET: BookController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
+            try
+            {
+                Client.DeleteBook(book.Id);
+            }
+            catch (Exception ex)
+            {
+                return View("NoRunning");
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: BookController/Delete/5
@@ -88,6 +119,11 @@ namespace WebClientMVC.Controllers
             {
                 return View();
             }
+        }
+
+        public string Next(int id)
+        {
+            return Client.GetNextBook(id);
         }
     }
 }

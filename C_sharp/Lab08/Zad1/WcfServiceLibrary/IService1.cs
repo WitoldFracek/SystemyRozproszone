@@ -51,6 +51,14 @@ namespace WcfServiceLibrary
         [OperationContract]
         [WebGet(UriTemplate = "/MyData", ResponseFormat = WebMessageFormat.Json)]
         DataDescription GetMyData();
+
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/books", Method = "PUT", RequestFormat = WebMessageFormat.Xml)]
+        string ModifyBookXml(Book book);
+
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/books", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
+        string ModifyBookJson(Book book);
     }
 
    [DataContract]
@@ -97,6 +105,12 @@ namespace WcfServiceLibrary
 
         [DataMember(Order = 2)]
         public string Breed { get; set; }
+
+        [DataMember(Order = 3)]
+        public int Age { get; set; }
+
+        [DataMember(Order = 4)]
+        public char Sex { get; set; }
     }
 
     [DataContract]
