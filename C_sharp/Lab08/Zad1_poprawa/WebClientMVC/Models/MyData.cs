@@ -7,13 +7,20 @@ using System.Threading.Tasks;
 
 namespace InfoPresenter
 {
-    class MyData
+    public class MyData
     {
+        public string ServiceData { get; set; }
+        public string LocalData { get; set; }
         public static void Info()
         {
             Console.WriteLine(InfoString());
             Console.WriteLine();
         }
+
+        public string Description { get {
+                return InfoString();
+            } 
+            }
 
         public static string InfoString()
         {

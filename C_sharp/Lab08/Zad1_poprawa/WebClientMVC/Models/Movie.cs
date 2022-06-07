@@ -10,12 +10,12 @@ namespace WebClientMVC.Models
     public class Movie
     {
         public Movie() { }
-        public Movie(int id, string title, int length, string director)
+        public Movie(int id, string title, string director, double length)
         {
             Id = id;
             Title = title;
-            Length = length;
             Director = director;
+            Length = length;
         }
 
         [JsonProperty("Id")]
@@ -26,12 +26,12 @@ namespace WebClientMVC.Models
         public string Title { get; set; }
 
         [Required]
-        [Range(0, int.MaxValue, ErrorMessage = "Please enter positive number")]
-        [JsonProperty("Length")]
-        public int Length { get; set; }
-
-        [Required]
         [JsonProperty("Director")]
         public string Director { get; set; }
+
+        [Required]
+        [Range(0, int.MaxValue, ErrorMessage = "Please enter positive number")]
+        [JsonProperty("Length")]
+        public double Length { get; set; }        
     }
 }

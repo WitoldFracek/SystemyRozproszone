@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InfoPresenter;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace WebClientMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            string myData = Client.GetMyData();
+            return View(new MyData { ServiceData = myData, LocalData = MyData.InfoString() });
         }
     }
 }

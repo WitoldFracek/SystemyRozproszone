@@ -131,3 +131,15 @@ D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
 D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\bin\Debug\net5.0\Nancy.dll
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Movie\Index.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Book\TotalCost.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\MyData\Index.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Cat\Index.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Cat\Details.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Cat\Create.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Cat\Edit.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Cat\Delete.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Movie\Details.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Movie\Create.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+D:\HDD\Studia\Systemy Rozproszone\SystemyRozproszone\C_sharp\Lab08\Zad1_poprawa\WebClientMVC\obj\Debug\net5.0\Razor\Views\Movie\Delete.cshtml.g.cs

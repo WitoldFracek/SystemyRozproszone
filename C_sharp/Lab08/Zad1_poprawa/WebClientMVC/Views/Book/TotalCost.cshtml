@@ -1,0 +1,11 @@
+﻿@model IEnumerable<WebClientMVC.Models.Book>
+
+@{
+    ViewData["Title"] = "TotalCost";
+}
+
+<h1>Cena za wszystkie książki = @(Model.Select(b => b.Price).Sum())</h1>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

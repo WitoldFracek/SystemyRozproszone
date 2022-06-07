@@ -71,7 +71,7 @@ namespace WebClientMVC.Controllers
         }
 
         // GET: BookController/Edit/5
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
             List<Book> allBooks = Client.GetBooks();
             var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
@@ -104,13 +104,31 @@ namespace WebClientMVC.Controllers
         }
 
         // GET: BookController/Delete/5
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            List<Book> allBooks = Client.GetBooks();
+            var book = allBooks.FirstOrDefault(b => b.Id == id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+            return View(book);
+        }
+
+        // POST: BookController/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
         {
             List<Book> allBooks = Client.GetBooks();
             var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
             try
             {
-                Client.DeleteBook(book.Id);
+                Client.DeleteCat(book.Id);
             }
             catch (Exception ex)
             {
@@ -119,24 +137,15 @@ namespace WebClientMVC.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: BookController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         public string Next(int id)
         {
             return Client.GetNextBook(id);
+        }
+
+        public IActionResult TotalCost()
+        {
+            List<Book> allBooks = Client.GetBooks();
+            return View(allBooks);
         }
     }
 }
