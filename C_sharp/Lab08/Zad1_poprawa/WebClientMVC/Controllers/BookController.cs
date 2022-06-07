@@ -128,7 +128,7 @@ namespace WebClientMVC.Controllers
             var book = allBooks.Where(b => b.Id == id).FirstOrDefault();
             try
             {
-                Client.DeleteCat(book.Id);
+                Client.DeleteBook(book.Id);
             }
             catch (Exception ex)
             {
